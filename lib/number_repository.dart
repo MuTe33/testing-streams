@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:rxdart/rxdart.dart';
 
 class NumberRepository {
-  final _numberStream = BehaviorSubject<int>();
+  final _numberStream = PublishSubject<int>();
 
   Future<int> get number => _numberStream.first;
 
